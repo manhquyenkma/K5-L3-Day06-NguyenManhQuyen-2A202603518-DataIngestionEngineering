@@ -1,0 +1,722 @@
+{
+  "strategy_a": [
+    {
+      "question_id": "q16",
+      "split": "test",
+      "type": "truc_tiep",
+      "question": "Để đạt học bổng khuyến khích học tập mức Xuất sắc, sinh viên cần đạt điểm học tập và điểm rèn luyện như thế nào?",
+      "expected_answer": "Điểm trung bình học tập từ 3.60 đến 4.00 và điểm rèn luyện đạt từ 90 điểm trở lên (loại Xuất sắc)",
+      "gold_page": 23,
+      "evidence_quote": "Mức Xuất sắc: Cấp cho sinh viên có Điểm trung bình học tập (ĐTBHT) đạt từ 3.60 đến 4.00 và ĐRL đạt loại Xuất sắc (từ 90 điểm trở lên). Mức học bổng bằng 120% mức trần học phí của ngành học",
+      "filter": null,
+      "hit_at_1": false,
+      "hit_at_3": true,
+      "hit_ranks": [
+        3
+      ],
+      "filter_compliant": null,
+      "top_hits": [
+        {
+          "rank": 1,
+          "chunk_id": "A_so-tay-sinh-vien-2024_p17_c1",
+          "page": 17,
+          "section": "cong_tac_sinh_vien",
+          "score": 0.7326270057981158,
+          "is_hit": false,
+          "reason": "Page mismatch: retrieved p17 vs gold p23",
+          "text_snippet": "yện cấp Khoa, cấp Trường thẩm định phê duyệt.\n3. Điểm rèn luyện của từng học kỳ là căn cứ để xét cấp học bổng khuyến khích học tập, xét khen thưởng, x..."
+        },
+        {
+          "rank": 2,
+          "chunk_id": "A_so-tay-sinh-vien-2024_p9_c0",
+          "page": 9,
+          "section": "dao_tao",
+          "score": 0.7088157179633535,
+          "is_hit": false,
+          "reason": "Page mismatch: retrieved p9 vs gold p23",
+          "text_snippet": "ĐIỀU 17. ĐIỀU KIỆN ĐƯỢC XÉT CÔNG NHẬN TỐT NGHIỆP\nSinh viên được công nhận tốt nghiệp và cấp bằng tốt nghiệp đại học khi đáp ứng đầy đủ các điều kiện s..."
+        },
+        {
+          "rank": 3,
+          "chunk_id": "A_so-tay-sinh-vien-2024_p23_c2",
+          "page": 23,
+          "section": "hoc_bong_hoc_phi",
+          "score": 0.7030876409582577,
+          "is_hit": true,
+          "reason": "Valid evidence hit",
+          "text_snippet": "a) Mức Xuất sắc: Cấp cho sinh viên có Điểm trung bình học tập (ĐTBHT) đạt từ 3.60 đến 4.00 và ĐRL đạt loại Xuất sắc (từ 90 điểm trở lên). Mức học bổng..."
+        }
+      ]
+    },
+    {
+      "question_id": "q17",
+      "split": "test",
+      "type": "dieu_kien_ngoai_le",
+      "question": "Sinh viên là con của cán bộ công chức bị tai nạn lao động hoặc bệnh nghề nghiệp được giảm bao nhiêu phần trăm học phí?",
+      "expected_answer": "Được giảm 50% học phí",
+      "gold_page": 25,
+      "evidence_quote": "Đối tượng được giảm 50% học phí:\nSinh viên là con của cán bộ, công chức, viên chức, công nhân mà cha hoặc mẹ bị tai nạn lao động hoặc mắc bệnh nghề nghiệp được hưởng trợ cấp thường xuyên",
+      "filter": null,
+      "hit_at_1": false,
+      "hit_at_3": false,
+      "hit_ranks": [],
+      "filter_compliant": null,
+      "top_hits": [
+        {
+          "rank": 1,
+          "chunk_id": "A_so-tay-sinh-vien-2024_p25_c2",
+          "page": 25,
+          "section": "hoc_bong_hoc_phi",
+          "score": 0.6867634038745205,
+          "is_hit": false,
+          "reason": "Evidence quote not found in chunk text",
+          "text_snippet": "ĐƯỢC GIẢM 70% VÀ 50% HỌC PHÍ\n1. Đối tượng được giảm 70% học phí:\nSinh viên là người dân tộc thiểu số (ngoài 16 dân tộc rất ít người nêu tại Điều 49) ở..."
+        },
+        {
+          "rank": 2,
+          "chunk_id": "A_so-tay-sinh-vien-2024_p26_c1",
+          "page": 26,
+          "section": "hoc_bong_hoc_phi",
+          "score": 0.648207852532742,
+          "is_hit": false,
+          "reason": "Page mismatch: retrieved p26 vs gold p25",
+          "text_snippet": "ồ côi cả cha lẫn mẹ không nơi nương tựa;\nb) Mức 100.000 VNĐ/tháng: Áp dụng đối với sinh viên thuộc hộ nghèo, hộ cận nghèo theo chuẩn nghèo quốc gia có..."
+        },
+        {
+          "rank": 3,
+          "chunk_id": "A_so-tay-sinh-vien-2024_p25_c0",
+          "page": 25,
+          "section": "hoc_bong_hoc_phi",
+          "score": 0.6131371170912803,
+          "is_hit": false,
+          "reason": "Evidence quote not found in chunk text",
+          "text_snippet": "ĐIỀU 49. ĐỐI TƯỢNG ĐƯỢC MIỄN 100% HỌC PHÍ\nTheo quy định tại Nghị định 81/2021/NĐ-CP của Chính phủ, các đối tượng sinh viên sau được miễn 100% học phí:..."
+        }
+      ]
+    },
+    {
+      "question_id": "q18",
+      "split": "test",
+      "type": "metadata_filter",
+      "question": "Thời hạn hoàn thành toàn bộ học phí của học kỳ chính là trong vòng mấy tuần đầu tiên của kỳ học?",
+      "expected_answer": "Trong vòng 6 tuần đầu tiên của học kỳ (tương ứng 42 ngày)",
+      "gold_page": 27,
+      "evidence_quote": "Thời hạn nộp học phí: Sinh viên phải hoàn thành toàn bộ học phí của học kỳ chính trong vòng 6 tuần đầu tiên của học kỳ (tương ứng 42 ngày kể từ ngày bắt đầu học tập).",
+      "filter": {
+        "section": "hoc_bong_hoc_phi"
+      },
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hit_ranks": [
+        1
+      ],
+      "filter_compliant": false,
+      "top_hits": [
+        {
+          "rank": 1,
+          "chunk_id": "A_so-tay-sinh-vien-2024_p27_c1",
+          "page": 27,
+          "section": "hoc_bong_hoc_phi",
+          "score": 0.813900001024374,
+          "is_hit": true,
+          "reason": "Valid evidence hit",
+          "text_snippet": "yết nhằm bù đắp chi phí vật tư tiêu hao.\n3. Học phần học lại, học cải thiện tính theo đơn giá tín chỉ thực tế tại thời điểm đăng ký học phần đó.\n\nĐIỀU..."
+        },
+        {
+          "rank": 2,
+          "chunk_id": "A_so-tay-sinh-vien-2024_p2_c0",
+          "page": 2,
+          "section": "dao_tao",
+          "score": 0.7220001933942068,
+          "is_hit": false,
+          "reason": "Page mismatch: retrieved p2 vs gold p27",
+          "text_snippet": "ĐIỀU 3. THỜI GIAN ĐÀO TẠO VÀ KẾ HOẠCH NĂM HỌC\n1. Năm học được tổ chức theo 2 học kỳ chính (học kỳ I, học kỳ II) và 1 học kỳ phụ (học kỳ hè). Mỗi học k..."
+        },
+        {
+          "rank": 3,
+          "chunk_id": "A_so-tay-sinh-vien-2024_p3_c2",
+          "page": 3,
+          "section": "dao_tao",
+          "score": 0.6910597681877778,
+          "is_hit": false,
+          "reason": "Page mismatch: retrieved p3 vs gold p27",
+          "text_snippet": "ong thời hạn quy định sẽ không ghi điểm, không tính vào điểm trung bình chung học kỳ và sinh viên được hoàn trả 50% học phí của học phần đó nếu nộp đơ..."
+        }
+      ]
+    },
+    {
+      "question_id": "q19",
+      "split": "test",
+      "type": "dien_dat_lai",
+      "question": "Sinh viên nội trú ký túc xá phải có mặt tại phòng ở trước mấy giờ đêm theo quy định giờ giới nghiêm?",
+      "expected_answer": "Trước 23h00 hàng ngày",
+      "gold_page": 30,
+      "evidence_quote": "Giờ đóng cửa KTX (giờ giới nghiêm): 23h00 hàng ngày. Tất cả sinh viên nội trú phải có mặt tại phòng ở trước 23h00.",
+      "filter": null,
+      "hit_at_1": false,
+      "hit_at_3": true,
+      "hit_ranks": [
+        2
+      ],
+      "filter_compliant": null,
+      "top_hits": [
+        {
+          "rank": 1,
+          "chunk_id": "A_so-tay-sinh-vien-2024_p30_c2",
+          "page": 30,
+          "section": "ky_tuc_xa",
+          "score": 0.819738531272193,
+          "is_hit": false,
+          "reason": "Evidence quote not found in chunk text",
+          "text_snippet": "h vào phòng ngủ của sinh viên mà chưa được sự đồng ý của Trưởng nhà.\n2. Thân nhân của sinh viên (bố, mẹ, anh chị em ruột) đến thăm có nhu cầu ở lại qu..."
+        },
+        {
+          "rank": 2,
+          "chunk_id": "A_so-tay-sinh-vien-2024_p30_c0",
+          "page": 30,
+          "section": "ky_tuc_xa",
+          "score": 0.6436400605338383,
+          "is_hit": true,
+          "reason": "Valid evidence hit",
+          "text_snippet": "ĐIỀU 61. QUY ĐỊNH VỀ THỜI GIAN BIỂU VÀ RA VÀO KTX\n1. Giờ mở cửa KTX: 05h00 hàng ngày.\n2. Giờ đóng cửa KTX (giờ giới nghiêm): 23h00 hàng ngày. Tất cả s..."
+        },
+        {
+          "rank": 3,
+          "chunk_id": "A_so-tay-sinh-vien-2024_p30_c3",
+          "page": 30,
+          "section": "ky_tuc_xa",
+          "score": 0.6017298646471889,
+          "is_hit": false,
+          "reason": "Evidence quote not found in chunk text",
+          "text_snippet": "ỳ hình thức nào. Mọi trường hợp vi phạm sẽ bị đình chỉ lưu trú KTX ngay lập tức.\n4. Cán bộ quản lý KTX và lực lượng an ninh tự quản được quyền kiểm tr..."
+        }
+      ]
+    },
+    {
+      "question_id": "q20",
+      "split": "test",
+      "type": "dieu_kien_ngoai_le",
+      "question": "Hành vi nấu ăn trong phòng ở Ký túc xá bằng bếp gas hoặc bếp từ sẽ bị xử lý kỷ luật ở mức nào?",
+      "expected_answer": "Bị kỷ luật cảnh cáo cấp Ký túc xá cho lần đầu vi phạm",
+      "gold_page": 32,
+      "evidence_quote": "Cảnh cáo cấp Ký túc xá: Áp dụng đối với các vi phạm: Đã bị khiển trách mà tái phạm; nấu ăn trong phòng ở lần đầu; tự ý câu móc điện, nước",
+      "filter": null,
+      "hit_at_1": false,
+      "hit_at_3": false,
+      "hit_ranks": [],
+      "filter_compliant": null,
+      "top_hits": [
+        {
+          "rank": 1,
+          "chunk_id": "A_so-tay-sinh-vien-2024_p31_c0",
+          "page": 31,
+          "section": "ky_tuc_xa",
+          "score": 0.6206706310609281,
+          "is_hit": false,
+          "reason": "Page mismatch: retrieved p31 vs gold p32",
+          "text_snippet": "ĐIỀU 63. AN TOÀN PHÒNG CHÁY, CHỮA CHÁY VÀ VỆ SINH MÔI TRƯỜNG\n1. Nghiêm cấm tuyệt đối sinh viên nấu ăn trong phòng ở KTX bằng bếp gas, bếp từ, bếp hồng..."
+        },
+        {
+          "rank": 2,
+          "chunk_id": "A_so-tay-sinh-vien-2024_p31_c1",
+          "page": 31,
+          "section": "ky_tuc_xa",
+          "score": 0.4834442898838936,
+          "is_hit": false,
+          "reason": "Page mismatch: retrieved p31 vs gold p32",
+          "text_snippet": "àng mã, nến hoặc hút thuốc lá trong phòng ở, hành lang và cầu thang KTX. Hệ thống báo cháy tự động sẽ kích hoạt chuông báo động toàn nhà khi phát hiện..."
+        },
+        {
+          "rank": 3,
+          "chunk_id": "A_so-tay-sinh-vien-2024_p32_c2",
+          "page": 32,
+          "section": "ky_tuc_xa",
+          "score": 0.4664459963777846,
+          "is_hit": false,
+          "reason": "Evidence quote not found in chunk text",
+          "text_snippet": "ữ hung khí nguy hiểm trong KTX;\nd) Trộm cắp tài sản của nhà trường hoặc của sinh viên khác;\ne) Đưa người khác giới ở lại qua đêm trong phòng ngủ KTX.\n..."
+        }
+      ]
+    }
+  ],
+  "strategy_b": [
+    {
+      "question_id": "q16",
+      "split": "test",
+      "type": "truc_tiep",
+      "question": "Để đạt học bổng khuyến khích học tập mức Xuất sắc, sinh viên cần đạt điểm học tập và điểm rèn luyện như thế nào?",
+      "expected_answer": "Điểm trung bình học tập từ 3.60 đến 4.00 và điểm rèn luyện đạt từ 90 điểm trở lên (loại Xuất sắc)",
+      "gold_page": 23,
+      "evidence_quote": "Mức Xuất sắc: Cấp cho sinh viên có Điểm trung bình học tập (ĐTBHT) đạt từ 3.60 đến 4.00 và ĐRL đạt loại Xuất sắc (từ 90 điểm trở lên). Mức học bổng bằng 120% mức trần học phí của ngành học",
+      "filter": null,
+      "hit_at_1": false,
+      "hit_at_3": false,
+      "hit_ranks": [],
+      "filter_compliant": null,
+      "top_hits": [
+        {
+          "rank": 1,
+          "chunk_id": "B_so-tay-sinh-vien-2024_p18_c1",
+          "page": 18,
+          "section": "cong_tac_sinh_vien",
+          "score": 0.7687290566421994,
+          "is_hit": false,
+          "reason": "Page mismatch: retrieved p18 vs gold p23",
+          "text_snippet": "ĐIỀU 36. SỬ DỤNG KẾT QUẢ ĐÁNH GIÁ RÈN LUYỆN\n1. Kết quả rèn luyện học kỳ được sử dụng để:\na) Xét cấp học bổng khuyến khích học tập: Sinh viên phải đạt ..."
+        },
+        {
+          "rank": 2,
+          "chunk_id": "B_so-tay-sinh-vien-2024_p9_c0",
+          "page": 9,
+          "section": "dao_tao",
+          "score": 0.7088157179633535,
+          "is_hit": false,
+          "reason": "Page mismatch: retrieved p9 vs gold p23",
+          "text_snippet": "ĐIỀU 17. ĐIỀU KIỆN ĐƯỢC XÉT CÔNG NHẬN TỐT NGHIỆP\nSinh viên được công nhận tốt nghiệp và cấp bằng tốt nghiệp đại học khi đáp ứng đầy đủ các điều kiện s..."
+        },
+        {
+          "rank": 3,
+          "chunk_id": "B_so-tay-sinh-vien-2024_p23_c0",
+          "page": 23,
+          "section": "hoc_bong_hoc_phi",
+          "score": 0.701739879038598,
+          "is_hit": false,
+          "reason": "Evidence quote not found in chunk text",
+          "text_snippet": "ĐIỀU 45. NGUYÊN TẮC VÀ ĐỐI TƯỢNG XÉT HỌC BỔNG KKHT\n1. Quỹ học bổng khuyến khích học tập được trích tối thiểu 8% từ nguồn thu học phí của trường để cấp..."
+        }
+      ]
+    },
+    {
+      "question_id": "q17",
+      "split": "test",
+      "type": "dieu_kien_ngoai_le",
+      "question": "Sinh viên là con của cán bộ công chức bị tai nạn lao động hoặc bệnh nghề nghiệp được giảm bao nhiêu phần trăm học phí?",
+      "expected_answer": "Được giảm 50% học phí",
+      "gold_page": 25,
+      "evidence_quote": "Đối tượng được giảm 50% học phí:\nSinh viên là con của cán bộ, công chức, viên chức, công nhân mà cha hoặc mẹ bị tai nạn lao động hoặc mắc bệnh nghề nghiệp được hưởng trợ cấp thường xuyên",
+      "filter": null,
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hit_ranks": [
+        1
+      ],
+      "filter_compliant": null,
+      "top_hits": [
+        {
+          "rank": 1,
+          "chunk_id": "B_so-tay-sinh-vien-2024_p25_c2",
+          "page": 25,
+          "section": "hoc_bong_hoc_phi",
+          "score": 0.6570275337606291,
+          "is_hit": true,
+          "reason": "Valid evidence hit",
+          "text_snippet": "ĐIỀU 50. ĐỐI TƯỢNG ĐƯỢC GIẢM 70% VÀ 50% HỌC PHÍ\n1. Đối tượng được giảm 70% học phí:\nSinh viên là người dân tộc thiểu số (ngoài 16 dân tộc rất ít người..."
+        },
+        {
+          "rank": 2,
+          "chunk_id": "B_so-tay-sinh-vien-2024_p25_c0",
+          "page": 25,
+          "section": "hoc_bong_hoc_phi",
+          "score": 0.6131371170912803,
+          "is_hit": false,
+          "reason": "Evidence quote not found in chunk text",
+          "text_snippet": "ĐIỀU 49. ĐỐI TƯỢNG ĐƯỢC MIỄN 100% HỌC PHÍ\nTheo quy định tại Nghị định 81/2021/NĐ-CP của Chính phủ, các đối tượng sinh viên sau được miễn 100% học phí:..."
+        },
+        {
+          "rank": 3,
+          "chunk_id": "B_so-tay-sinh-vien-2024_p3_c1",
+          "page": 3,
+          "section": "dao_tao",
+          "score": 0.5803737942088442,
+          "is_hit": false,
+          "reason": "Page mismatch: retrieved p3 vs gold p25",
+          "text_snippet": "c) Thủ tục: Sinh viên thực hiện thao tác hủy học phần trực tiếp trên cổng thông tin đào tạo hoặc nộp đơn có xác nhận của Cố vấn học tập về Phòng Đào t..."
+        }
+      ]
+    },
+    {
+      "question_id": "q18",
+      "split": "test",
+      "type": "metadata_filter",
+      "question": "Thời hạn hoàn thành toàn bộ học phí của học kỳ chính là trong vòng mấy tuần đầu tiên của kỳ học?",
+      "expected_answer": "Trong vòng 6 tuần đầu tiên của học kỳ (tương ứng 42 ngày)",
+      "gold_page": 27,
+      "evidence_quote": "Thời hạn nộp học phí: Sinh viên phải hoàn thành toàn bộ học phí của học kỳ chính trong vòng 6 tuần đầu tiên của học kỳ (tương ứng 42 ngày kể từ ngày bắt đầu học tập).",
+      "filter": {
+        "section": "hoc_bong_hoc_phi"
+      },
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hit_ranks": [
+        1
+      ],
+      "filter_compliant": false,
+      "top_hits": [
+        {
+          "rank": 1,
+          "chunk_id": "B_so-tay-sinh-vien-2024_p27_c1",
+          "page": 27,
+          "section": "hoc_bong_hoc_phi",
+          "score": 0.8194685224303397,
+          "is_hit": true,
+          "reason": "Valid evidence hit",
+          "text_snippet": "ĐIỀU 55. THỜI HẠN NỘP HỌC PHÍ VÀ GIA HẠN HỌC PHÍ\n1. Thời hạn nộp học phí: Sinh viên phải hoàn thành toàn bộ học phí của học kỳ chính trong vòng 6 tuần..."
+        },
+        {
+          "rank": 2,
+          "chunk_id": "B_so-tay-sinh-vien-2024_p2_c0",
+          "page": 2,
+          "section": "dao_tao",
+          "score": 0.7220002264298124,
+          "is_hit": false,
+          "reason": "Page mismatch: retrieved p2 vs gold p27",
+          "text_snippet": "ĐIỀU 3. THỜI GIAN ĐÀO TẠO VÀ KẾ HOẠCH NĂM HỌC\n1. Năm học được tổ chức theo 2 học kỳ chính (học kỳ I, học kỳ II) và 1 học kỳ phụ (học kỳ hè). Mỗi học k..."
+        },
+        {
+          "rank": 3,
+          "chunk_id": "B_so-tay-sinh-vien-2024_p9_c2",
+          "page": 9,
+          "section": "dao_tao",
+          "score": 0.701482822840185,
+          "is_hit": false,
+          "reason": "Page mismatch: retrieved p9 vs gold p27",
+          "text_snippet": "ĐIỀU 18. TỔ CHỨC XÉT VÀ CẤP BẰNG TỐT NGHIỆP\n1. Nhà trường tổ chức xét tốt nghiệp chính thức 4 đợt trong một năm học vào các tháng 3, tháng 6, tháng 9 ..."
+        }
+      ]
+    },
+    {
+      "question_id": "q19",
+      "split": "test",
+      "type": "dien_dat_lai",
+      "question": "Sinh viên nội trú ký túc xá phải có mặt tại phòng ở trước mấy giờ đêm theo quy định giờ giới nghiêm?",
+      "expected_answer": "Trước 23h00 hàng ngày",
+      "gold_page": 30,
+      "evidence_quote": "Giờ đóng cửa KTX (giờ giới nghiêm): 23h00 hàng ngày. Tất cả sinh viên nội trú phải có mặt tại phòng ở trước 23h00.",
+      "filter": null,
+      "hit_at_1": false,
+      "hit_at_3": true,
+      "hit_ranks": [
+        2
+      ],
+      "filter_compliant": null,
+      "top_hits": [
+        {
+          "rank": 1,
+          "chunk_id": "B_so-tay-sinh-vien-2024_p30_c1",
+          "page": 30,
+          "section": "ky_tuc_xa",
+          "score": 0.7726671144842968,
+          "is_hit": false,
+          "reason": "Evidence quote not found in chunk text",
+          "text_snippet": "ĐIỀU 62. NỘI QUY TIẾP KHÁCH VÀ LƯU TRÚ CỦA NGƯỜI NGOÀI\n1. Sinh viên nội trú được tiếp người thân, bạn bè tại Phòng tiếp khách chung của KTX từ 07h00 đ..."
+        },
+        {
+          "rank": 2,
+          "chunk_id": "B_so-tay-sinh-vien-2024_p30_c0",
+          "page": 30,
+          "section": "ky_tuc_xa",
+          "score": 0.6436400605338383,
+          "is_hit": true,
+          "reason": "Valid evidence hit",
+          "text_snippet": "ĐIỀU 61. QUY ĐỊNH VỀ THỜI GIAN BIỂU VÀ RA VÀO KTX\n1. Giờ mở cửa KTX: 05h00 hàng ngày.\n2. Giờ đóng cửa KTX (giờ giới nghiêm): 23h00 hàng ngày. Tất cả s..."
+        },
+        {
+          "rank": 3,
+          "chunk_id": "B_so-tay-sinh-vien-2024_p30_c2",
+          "page": 30,
+          "section": "ky_tuc_xa",
+          "score": 0.5812383174457756,
+          "is_hit": false,
+          "reason": "Evidence quote not found in chunk text",
+          "text_snippet": "Cán bộ quản lý KTX và lực lượng an ninh tự quản được quyền kiểm tra đột xuất việc chấp hành quy định lưu trú tại các phòng ở sau 23h00 nhằm bảo đảm an..."
+        }
+      ]
+    },
+    {
+      "question_id": "q20",
+      "split": "test",
+      "type": "dieu_kien_ngoai_le",
+      "question": "Hành vi nấu ăn trong phòng ở Ký túc xá bằng bếp gas hoặc bếp từ sẽ bị xử lý kỷ luật ở mức nào?",
+      "expected_answer": "Bị kỷ luật cảnh cáo cấp Ký túc xá cho lần đầu vi phạm",
+      "gold_page": 32,
+      "evidence_quote": "Cảnh cáo cấp Ký túc xá: Áp dụng đối với các vi phạm: Đã bị khiển trách mà tái phạm; nấu ăn trong phòng ở lần đầu; tự ý câu móc điện, nước",
+      "filter": null,
+      "hit_at_1": false,
+      "hit_at_3": false,
+      "hit_ranks": [],
+      "filter_compliant": null,
+      "top_hits": [
+        {
+          "rank": 1,
+          "chunk_id": "B_so-tay-sinh-vien-2024_p31_c0",
+          "page": 31,
+          "section": "ky_tuc_xa",
+          "score": 0.6206706310609281,
+          "is_hit": false,
+          "reason": "Page mismatch: retrieved p31 vs gold p32",
+          "text_snippet": "ĐIỀU 63. AN TOÀN PHÒNG CHÁY, CHỮA CHÁY VÀ VỆ SINH MÔI TRƯỜNG\n1. Nghiêm cấm tuyệt đối sinh viên nấu ăn trong phòng ở KTX bằng bếp gas, bếp từ, bếp hồng..."
+        },
+        {
+          "rank": 2,
+          "chunk_id": "B_so-tay-sinh-vien-2024_p32_c2",
+          "page": 32,
+          "section": "ky_tuc_xa",
+          "score": 0.4522924373759606,
+          "is_hit": false,
+          "reason": "Evidence quote not found in chunk text",
+          "text_snippet": "ĐIỀU 66. THÔNG BÁO VỀ KHOA VÀ GHI NHẬN HỒ SƠ RÈN LUYỆN\n1. Mọi quyết định kỷ luật từ mức Khiển trách trở lên tại Ký túc xá đều được gửi bằng văn bản về..."
+        },
+        {
+          "rank": 3,
+          "chunk_id": "B_so-tay-sinh-vien-2024_p15_c0",
+          "page": 15,
+          "section": "khao_thi",
+          "score": 0.44735109509851556,
+          "is_hit": false,
+          "reason": "Page mismatch: retrieved p15 vs gold p32",
+          "text_snippet": "ĐIỀU 29. HÌNH THỨC KỶ LUẬT KHIỂN TRÁCH PHÒNG THI\n1. Hình thức kỷ luật Khiển trách áp dụng đối với thí sinh phạm lỗi một lần trong các hành vi sau:\na) ..."
+        }
+      ]
+    }
+  ],
+  "strategy_c": [
+    {
+      "question_id": "q16",
+      "split": "test",
+      "type": "truc_tiep",
+      "question": "Để đạt học bổng khuyến khích học tập mức Xuất sắc, sinh viên cần đạt điểm học tập và điểm rèn luyện như thế nào?",
+      "expected_answer": "Điểm trung bình học tập từ 3.60 đến 4.00 và điểm rèn luyện đạt từ 90 điểm trở lên (loại Xuất sắc)",
+      "gold_page": 23,
+      "evidence_quote": "Mức Xuất sắc: Cấp cho sinh viên có Điểm trung bình học tập (ĐTBHT) đạt từ 3.60 đến 4.00 và ĐRL đạt loại Xuất sắc (từ 90 điểm trở lên). Mức học bổng bằng 120% mức trần học phí của ngành học",
+      "filter": null,
+      "hit_at_1": false,
+      "hit_at_3": false,
+      "hit_ranks": [],
+      "filter_compliant": null,
+      "top_hits": [
+        {
+          "rank": 1,
+          "chunk_id": "B_so-tay-sinh-vien-2024_p18_c1",
+          "page": 18,
+          "section": "cong_tac_sinh_vien",
+          "score": 0.7687290566421994,
+          "is_hit": false,
+          "reason": "Page mismatch: retrieved p18 vs gold p23",
+          "text_snippet": "ĐIỀU 36. SỬ DỤNG KẾT QUẢ ĐÁNH GIÁ RÈN LUYỆN\n1. Kết quả rèn luyện học kỳ được sử dụng để:\na) Xét cấp học bổng khuyến khích học tập: Sinh viên phải đạt ..."
+        },
+        {
+          "rank": 2,
+          "chunk_id": "B_so-tay-sinh-vien-2024_p9_c0",
+          "page": 9,
+          "section": "dao_tao",
+          "score": 0.7088157179633535,
+          "is_hit": false,
+          "reason": "Page mismatch: retrieved p9 vs gold p23",
+          "text_snippet": "ĐIỀU 17. ĐIỀU KIỆN ĐƯỢC XÉT CÔNG NHẬN TỐT NGHIỆP\nSinh viên được công nhận tốt nghiệp và cấp bằng tốt nghiệp đại học khi đáp ứng đầy đủ các điều kiện s..."
+        },
+        {
+          "rank": 3,
+          "chunk_id": "B_so-tay-sinh-vien-2024_p23_c0",
+          "page": 23,
+          "section": "hoc_bong_hoc_phi",
+          "score": 0.701739879038598,
+          "is_hit": false,
+          "reason": "Evidence quote not found in chunk text",
+          "text_snippet": "ĐIỀU 45. NGUYÊN TẮC VÀ ĐỐI TƯỢNG XÉT HỌC BỔNG KKHT\n1. Quỹ học bổng khuyến khích học tập được trích tối thiểu 8% từ nguồn thu học phí của trường để cấp..."
+        }
+      ]
+    },
+    {
+      "question_id": "q17",
+      "split": "test",
+      "type": "dieu_kien_ngoai_le",
+      "question": "Sinh viên là con của cán bộ công chức bị tai nạn lao động hoặc bệnh nghề nghiệp được giảm bao nhiêu phần trăm học phí?",
+      "expected_answer": "Được giảm 50% học phí",
+      "gold_page": 25,
+      "evidence_quote": "Đối tượng được giảm 50% học phí:\nSinh viên là con của cán bộ, công chức, viên chức, công nhân mà cha hoặc mẹ bị tai nạn lao động hoặc mắc bệnh nghề nghiệp được hưởng trợ cấp thường xuyên",
+      "filter": null,
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hit_ranks": [
+        1
+      ],
+      "filter_compliant": null,
+      "top_hits": [
+        {
+          "rank": 1,
+          "chunk_id": "B_so-tay-sinh-vien-2024_p25_c2",
+          "page": 25,
+          "section": "hoc_bong_hoc_phi",
+          "score": 0.6570275337606291,
+          "is_hit": true,
+          "reason": "Valid evidence hit",
+          "text_snippet": "ĐIỀU 50. ĐỐI TƯỢNG ĐƯỢC GIẢM 70% VÀ 50% HỌC PHÍ\n1. Đối tượng được giảm 70% học phí:\nSinh viên là người dân tộc thiểu số (ngoài 16 dân tộc rất ít người..."
+        },
+        {
+          "rank": 2,
+          "chunk_id": "B_so-tay-sinh-vien-2024_p25_c0",
+          "page": 25,
+          "section": "hoc_bong_hoc_phi",
+          "score": 0.6131371170912803,
+          "is_hit": false,
+          "reason": "Evidence quote not found in chunk text",
+          "text_snippet": "ĐIỀU 49. ĐỐI TƯỢNG ĐƯỢC MIỄN 100% HỌC PHÍ\nTheo quy định tại Nghị định 81/2021/NĐ-CP của Chính phủ, các đối tượng sinh viên sau được miễn 100% học phí:..."
+        },
+        {
+          "rank": 3,
+          "chunk_id": "B_so-tay-sinh-vien-2024_p3_c1",
+          "page": 3,
+          "section": "dao_tao",
+          "score": 0.5803737942088442,
+          "is_hit": false,
+          "reason": "Page mismatch: retrieved p3 vs gold p25",
+          "text_snippet": "c) Thủ tục: Sinh viên thực hiện thao tác hủy học phần trực tiếp trên cổng thông tin đào tạo hoặc nộp đơn có xác nhận của Cố vấn học tập về Phòng Đào t..."
+        }
+      ]
+    },
+    {
+      "question_id": "q18",
+      "split": "test",
+      "type": "metadata_filter",
+      "question": "Thời hạn hoàn thành toàn bộ học phí của học kỳ chính là trong vòng mấy tuần đầu tiên của kỳ học?",
+      "expected_answer": "Trong vòng 6 tuần đầu tiên của học kỳ (tương ứng 42 ngày)",
+      "gold_page": 27,
+      "evidence_quote": "Thời hạn nộp học phí: Sinh viên phải hoàn thành toàn bộ học phí của học kỳ chính trong vòng 6 tuần đầu tiên của học kỳ (tương ứng 42 ngày kể từ ngày bắt đầu học tập).",
+      "filter": {
+        "section": "hoc_bong_hoc_phi"
+      },
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hit_ranks": [
+        1
+      ],
+      "filter_compliant": true,
+      "top_hits": [
+        {
+          "rank": 1,
+          "chunk_id": "B_so-tay-sinh-vien-2024_p27_c1",
+          "page": 27,
+          "section": "hoc_bong_hoc_phi",
+          "score": 0.8194685224303397,
+          "is_hit": true,
+          "reason": "Valid evidence hit",
+          "text_snippet": "ĐIỀU 55. THỜI HẠN NỘP HỌC PHÍ VÀ GIA HẠN HỌC PHÍ\n1. Thời hạn nộp học phí: Sinh viên phải hoàn thành toàn bộ học phí của học kỳ chính trong vòng 6 tuần..."
+        },
+        {
+          "rank": 2,
+          "chunk_id": "B_so-tay-sinh-vien-2024_p27_c2",
+          "page": 27,
+          "section": "hoc_bong_hoc_phi",
+          "score": 0.6270647283155988,
+          "is_hit": false,
+          "reason": "Evidence quote not found in chunk text",
+          "text_snippet": "ĐIỀU 56. CHẾ TÀI XỬ LÝ VI PHẠM THỜI HẠN NỘP HỌC PHÍ\nSinh viên không nộp học phí đúng hạn và không có đơn xin gia hạn được chấp thuận sẽ bị xử lý kỷ lu..."
+        },
+        {
+          "rank": 3,
+          "chunk_id": "B_so-tay-sinh-vien-2024_p27_c0",
+          "page": 27,
+          "section": "hoc_bong_hoc_phi",
+          "score": 0.5631687315458511,
+          "is_hit": false,
+          "reason": "Evidence quote not found in chunk text",
+          "text_snippet": "ĐIỀU 54. ĐỊNH MỨC THU VÀ CÁCH TÍNH HỌC PHÍ TÍN CHỈ\n1. Học phí được xác định theo số lượng tín chỉ của các học phần mà sinh viên đăng ký trong học kỳ n..."
+        }
+      ]
+    },
+    {
+      "question_id": "q19",
+      "split": "test",
+      "type": "dien_dat_lai",
+      "question": "Sinh viên nội trú ký túc xá phải có mặt tại phòng ở trước mấy giờ đêm theo quy định giờ giới nghiêm?",
+      "expected_answer": "Trước 23h00 hàng ngày",
+      "gold_page": 30,
+      "evidence_quote": "Giờ đóng cửa KTX (giờ giới nghiêm): 23h00 hàng ngày. Tất cả sinh viên nội trú phải có mặt tại phòng ở trước 23h00.",
+      "filter": null,
+      "hit_at_1": false,
+      "hit_at_3": true,
+      "hit_ranks": [
+        2
+      ],
+      "filter_compliant": null,
+      "top_hits": [
+        {
+          "rank": 1,
+          "chunk_id": "B_so-tay-sinh-vien-2024_p30_c1",
+          "page": 30,
+          "section": "ky_tuc_xa",
+          "score": 0.7726671144842968,
+          "is_hit": false,
+          "reason": "Evidence quote not found in chunk text",
+          "text_snippet": "ĐIỀU 62. NỘI QUY TIẾP KHÁCH VÀ LƯU TRÚ CỦA NGƯỜI NGOÀI\n1. Sinh viên nội trú được tiếp người thân, bạn bè tại Phòng tiếp khách chung của KTX từ 07h00 đ..."
+        },
+        {
+          "rank": 2,
+          "chunk_id": "B_so-tay-sinh-vien-2024_p30_c0",
+          "page": 30,
+          "section": "ky_tuc_xa",
+          "score": 0.6436400605338383,
+          "is_hit": true,
+          "reason": "Valid evidence hit",
+          "text_snippet": "ĐIỀU 61. QUY ĐỊNH VỀ THỜI GIAN BIỂU VÀ RA VÀO KTX\n1. Giờ mở cửa KTX: 05h00 hàng ngày.\n2. Giờ đóng cửa KTX (giờ giới nghiêm): 23h00 hàng ngày. Tất cả s..."
+        },
+        {
+          "rank": 3,
+          "chunk_id": "B_so-tay-sinh-vien-2024_p30_c2",
+          "page": 30,
+          "section": "ky_tuc_xa",
+          "score": 0.5812383174457756,
+          "is_hit": false,
+          "reason": "Evidence quote not found in chunk text",
+          "text_snippet": "Cán bộ quản lý KTX và lực lượng an ninh tự quản được quyền kiểm tra đột xuất việc chấp hành quy định lưu trú tại các phòng ở sau 23h00 nhằm bảo đảm an..."
+        }
+      ]
+    },
+    {
+      "question_id": "q20",
+      "split": "test",
+      "type": "dieu_kien_ngoai_le",
+      "question": "Hành vi nấu ăn trong phòng ở Ký túc xá bằng bếp gas hoặc bếp từ sẽ bị xử lý kỷ luật ở mức nào?",
+      "expected_answer": "Bị kỷ luật cảnh cáo cấp Ký túc xá cho lần đầu vi phạm",
+      "gold_page": 32,
+      "evidence_quote": "Cảnh cáo cấp Ký túc xá: Áp dụng đối với các vi phạm: Đã bị khiển trách mà tái phạm; nấu ăn trong phòng ở lần đầu; tự ý câu móc điện, nước",
+      "filter": null,
+      "hit_at_1": false,
+      "hit_at_3": false,
+      "hit_ranks": [],
+      "filter_compliant": null,
+      "top_hits": [
+        {
+          "rank": 1,
+          "chunk_id": "B_so-tay-sinh-vien-2024_p31_c0",
+          "page": 31,
+          "section": "ky_tuc_xa",
+          "score": 0.6206706310609281,
+          "is_hit": false,
+          "reason": "Page mismatch: retrieved p31 vs gold p32",
+          "text_snippet": "ĐIỀU 63. AN TOÀN PHÒNG CHÁY, CHỮA CHÁY VÀ VỆ SINH MÔI TRƯỜNG\n1. Nghiêm cấm tuyệt đối sinh viên nấu ăn trong phòng ở KTX bằng bếp gas, bếp từ, bếp hồng..."
+        },
+        {
+          "rank": 2,
+          "chunk_id": "B_so-tay-sinh-vien-2024_p32_c2",
+          "page": 32,
+          "section": "ky_tuc_xa",
+          "score": 0.4522924373759606,
+          "is_hit": false,
+          "reason": "Evidence quote not found in chunk text",
+          "text_snippet": "ĐIỀU 66. THÔNG BÁO VỀ KHOA VÀ GHI NHẬN HỒ SƠ RÈN LUYỆN\n1. Mọi quyết định kỷ luật từ mức Khiển trách trở lên tại Ký túc xá đều được gửi bằng văn bản về..."
+        },
+        {
+          "rank": 3,
+          "chunk_id": "B_so-tay-sinh-vien-2024_p15_c0",
+          "page": 15,
+          "section": "khao_thi",
+          "score": 0.44735109509851556,
+          "is_hit": false,
+          "reason": "Page mismatch: retrieved p15 vs gold p32",
+          "text_snippet": "ĐIỀU 29. HÌNH THỨC KỶ LUẬT KHIỂN TRÁCH PHÒNG THI\n1. Hình thức kỷ luật Khiển trách áp dụng đối với thí sinh phạm lỗi một lần trong các hành vi sau:\na) ..."
+        }
+      ]
+    }
+  ]
+}

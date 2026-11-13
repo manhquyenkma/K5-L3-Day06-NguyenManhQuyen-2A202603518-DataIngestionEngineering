@@ -1,47 +1,91 @@
-# Day 06 · Data Ingestion Engineering
+# Day 06 · Data Ingestion Engineering Lab
 
-**Lab cá nhân** · **4 giờ** · **Dữ liệu tự chọn**
+**Học viên:** Nguyễn Mạnh Quyền | **MSSV:** 2A202603518 | **Lớp:** K5-L3  
+**Repository:** [K5-L3-Day06-NguyenManhQuyen-2A202603518-DataIngestionEngineering](https://github.com/manhquyenkma/K5-L3-Day06-NguyenManhQuyen-2A202603518-DataIngestionEngineering)
 
-Biến tài liệu thành kho tri thức có thể truy xuất cho AI agent, rồi đo xem cách chuẩn bị dữ liệu nào hiệu quả nhất.
+Bài thực hành cá nhân thiết kế và hiện thực Data Ingestion Pipeline hoàn chỉnh cho AI Retrieval, so sánh có kiểm soát **3 chiến lược dữ liệu** trên cùng một tập corpus và benchmark 20 câu hỏi theo đúng chuẩn 5 khía cạnh đánh giá của môn học.
 
-| 📄 Dữ liệu | 🧩 Chiến lược | 🎯 Benchmark |
-|---|---|---|
-| Tối thiểu **30 trang nội dung** | Tối thiểu **3 cấu hình** | Tối thiểu **20 câu hỏi** |
+---
 
-## Bắt đầu nhanh
+## 1. Tổng quan Corpus và Dữ liệu
 
-Dùng [starter PostgreSQL + pgvector](starter/README.md) để dựng database và hoàn thiện các hàm TODO, hoặc tự chọn vector store tương đương. Starter chỉ là khung: **bạn tự hiện thực pipeline và benchmark**.
+- **Chủ đề:** Sổ tay Sinh viên và Quy chế Đào tạo - Khảo thí - Công tác Sinh viên (Năm học 2024 - 2025).
+- **Quy mô:** **32 trang nội dung độc lập**, tổng cộng **54.502 ký tự** (trang ngắn nhất đạt 1.502 ký tự, thỏa mãn tuyệt đối tiêu chí tối thiểu 1.500 ký tự/trang và >= 30 trang theo `GUIDE.md`).
+- **Phân vùng (`section`):**
+  - `dao_tao` (Trang 1–10): Chương trình học, tín chỉ, đăng ký, cảnh báo, tốt nghiệp.
+  - `khao_thi` (Trang 11–16): Phòng thi, hoãn thi, phúc khảo, kỷ luật phòng thi.
+  - `cong_tac_sinh_vien` (Trang 17–22): Đánh giá rèn luyện, khen thưởng, kỷ luật, thủ tục.
+  - `hoc_bong_hoc_phi` (Trang 23–27): Học bổng KKHT, miễn giảm học phí, hạn nộp học phí.
+  - `ky_tuc_xa` (Trang 28–32): Ưu tiên nội trú, nội quy giờ giấc, PCCC, vi phạm KTX.
+- **Manifest:** [data/manifest.json](data/manifest.json).
+- **File dữ liệu:** [data/so_tay_sinh_vien_2024.json](data/so_tay_sinh_vien_2024.json).
 
-## 1. Xây pipeline
+---
 
-![Đọc tài liệu, chuẩn hóa, chia chunk, tạo vector, lưu và kiểm tra](assets/ingestion-pipeline.svg)
+## 2. Ba chiến lược dữ liệu và Mô hình
 
-Chọn tài liệu được phép sử dụng; giữ **ID tài liệu, nguồn, trang/vị trí** và metadata phù hợp. Dùng embedding model thật qua API hoặc chạy local; lưu và truy xuất bằng pgvector, Qdrant, Chroma hoặc một store tương đương.
+| Tiêu chí | Chiến lược A | Chiến lược B | Chiến lược C |
+|---|---|---|---|
+| **Cơ chế Chunking** | Fixed-size window (500 ký tự, overlap 50 ký tự) | Structural Paragraph (Điều/Khoản, max 800 ký tự, ngắt theo câu) | Structural Paragraph (giống hệt B) |
+| **Số lượng Chunks** | 132 chunks | 102 chunks | 102 chunks |
+| **Embedding Model** | `sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2` (384 chiều, local) | Cùng model nhúng | Cùng model nhúng |
+| **Vector Store** | Qdrant embedded persistent (`results/qdrant_db`) | Qdrant embedded persistent | Qdrant embedded persistent |
+| **Truy xuất Top-3** | Cosine similarity, **không lọc** | Cosine similarity, **không lọc** | Cosine similarity, **lọc metadata (`section`)** |
 
-## 2. So sánh và đánh giá
+- **So sánh A–B:** Phân tích ảnh hưởng của cơ chế chia chunk (Fixed-size vs Paragraph Structural).
+- **So sánh B–C:** Cô lập 100% biến số chunk và embedding để đo lường riêng biệt tác động của **Metadata Filtering**.
 
-![Ba chiến lược được đánh giá trên cùng corpus và benchmark dev/test](assets/benchmark-workflow.svg)
+---
 
-Dùng cùng dữ liệu, model và câu hỏi cho cả ba cấu hình. Tách **15 câu dev / 5 câu test** trước khi chạy; chọn cấu hình trên dev, rồi đánh giá test sau khi cố định. Mỗi câu hỏi cần có đoạn bằng chứng và trang nguồn; thiết kế bộ câu hỏi và đánh giá theo [BENCHMARK.md](BENCHMARK.md).
+## 3. Benchmark và Đánh giá 5 khía cạnh
 
-Đánh giá theo năm khía cạnh: **độ chính xác truy xuất**, **tính mạch lạc của chunk**, **tính hữu dụng của metadata**, **chất lượng grounding** và **tác động của chiến lược dữ liệu**. Giải thích lựa chọn bằng kết quả, ví dụ lỗi và các đánh đổi.
+- **Bộ câu hỏi:** 20 câu hỏi ([benchmark/questions.json](benchmark/questions.json)), phân chia trước: **15 Dev (`q01`–`q15`) / 5 Test (`q16`–`q20`)**.
+- **Câu hỏi Filter:** 4 câu (`q04`, `q08`, `q12` ở Dev; `q18` ở Test).
+- **Độ bao phủ câu hỏi:** Câu hỏi trực tiếp, câu hỏi diễn đạt lại, câu hỏi điều kiện/ngoại lệ, câu hỏi lọc metadata.
 
-## 3. Chuẩn bị bài nộp
+### Kết quả tóm tắt
 
-1. Chạy pipeline và lưu cấu hình, kết quả top-3, trace cùng nhãn đánh giá thủ công.
-2. Điền [thông tin học viên](STUDENT.md), [nhật ký thí nghiệm](artifacts/experiment_log.csv) và bản sao [mẫu báo cáo cá nhân](report/individual/MSSV_HoTen.md).
-3. Kiểm tra mã nguồn, cách chạy, manifest dữ liệu và checklist trong [SUBMISSION.md](SUBMISSION.md).
+| Chiến lược | Split | Hit@1 | Evidence Hit@3 | Coherence (TB/2) | Filter Compliance | Grounding (TB/2) |
+|---|---|---|---|---|---|---|
+| **Strategy A** | Dev | 9/15 (60.0%) | 10/15 (66.7%) | 0.20 / 2 | 1/3 (33.3%) | - |
+| **Strategy A** | Test | 1/5 (20.0%) | 3/5 (60.0%) | 0.20 / 2 | 0/1 (0.0%) | 1.60 / 2 |
+| **Strategy B** | Dev | 7/15 (46.7%) | 10/15 (66.7%) | 2.00 / 2 | 1/3 (33.3%) | - |
+| **Strategy B** | Test | 2/5 (40.0%) | 3/5 (60.0%) | 2.00 / 2 | 0/1 (0.0%) | 1.60 / 2 |
+| **Strategy C** | Dev | 7/15 (46.7%) | 10/15 (66.7%) | 2.00 / 2 | **3/3 (100.0%)** | - |
+| **Strategy C** | Test | 2/5 (40.0%) | 3/5 (60.0%) | 2.00 / 2 | **1/1 (100.0%)** | 1.60 / 2 |
 
-## Tài liệu hướng dẫn
+- **Báo cáo chi tiết cá nhân:** [report/individual/2A202603518_NguyenManhQuyen.md](report/individual/2A202603518_NguyenManhQuyen.md).
+- **Trace chi tiết:** [results/retrieval_trace.json](results/retrieval_trace.json).
+- **Nhật ký thí nghiệm:** [artifacts/experiment_log.csv](artifacts/experiment_log.csv).
+- **Dữ liệu chấm thủ công (Audit):** [results/human_audit.json](results/human_audit.json).
 
-| Bạn cần tìm | Tài liệu |
-|---|---|
-| Setup baseline PostgreSQL + pgvector | [starter/README.md](starter/README.md) |
-| Các bước làm và cách tính chỉ số | [GUIDE.md](GUIDE.md) |
-| Tiến độ trong 4 giờ | [CHECKPOINTS.md](CHECKPOINTS.md) |
-| Năm tiêu chí benchmark và bộ câu hỏi | [BENCHMARK.md](BENCHMARK.md) |
-| Tiêu chí chấm điểm | [RUBRIC.md](RUBRIC.md) |
-| Quy tắc sử dụng dữ liệu, AI và API | [RULES.md](RULES.md) |
-| Cách nộp bài | [SUBMISSION.md](SUBMISSION.md) |
+---
 
-[data/format-example.json](data/format-example.json) chỉ minh họa định dạng, không phải corpus đủ điều kiện. Phần xử lý và benchmark do bạn tự hiện thực; không bắt buộc xây chatbot.
+## 4. Cài đặt và Tái lập kết quả
+
+### Yêu cầu môi trường
+- Python 3.11+
+- Các thư viện cần thiết:
+  ```bash
+  pip install sentence-transformers qdrant-client
+  ```
+
+### Lệnh chạy Pipeline toàn diện
+Chạy pipeline từ thư mục gốc repository:
+```bash
+python -m src.run
+```
+Hoặc chạy từ thư mục `starter/`:
+```bash
+cd starter
+python -m src.run
+```
+
+Lệnh trên sẽ tự động:
+1. Nạp và chuẩn hóa corpus 32 trang văn bản.
+2. Cắt chunk theo Strategy A (132 chunks) và Strategy B/C (102 chunks).
+3. Tạo vector nhúng 384 chiều bằng mô hình đa ngữ Sentence Transformers.
+4. Nạp vào Qdrant persistent storage trên đĩa (`results/qdrant_db/`) và kiểm chứng tính Idempotent (không nhân đôi bản ghi).
+5. Chạy truy xuất Top-3 cho cả 20 câu hỏi qua cả 3 chiến lược.
+6. Tính toán các chỉ số Hit@1, Hit@3, Filter Compliance.
+7. Xuất trace và bảng tóm tắt ra console và các file kết quả.

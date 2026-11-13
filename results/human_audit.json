@@ -1,0 +1,158 @@
+{
+  "coherence_audit_10_samples": [
+    {
+      "page": 1,
+      "title": "Chương I: Quy định chung về Chương trình đào tạo và Tín chỉ",
+      "score_a": 1,
+      "reason_a": "Cắt lửng giữa câu tại 'tuân thủ đầy đủ các quy định', mất vế sau về cơ quan ban hành hướng dẫn.",
+      "score_b": 2,
+      "reason_b": "Giữ nguyên vẹn toàn bộ Điều 1 về phạm vi điều chỉnh và đối tượng áp dụng, tự hiểu độc lập."
+    },
+    {
+      "page": 2,
+      "title": "Chương II: Tổ chức năm học và Đăng ký học phần",
+      "score_a": 0,
+      "reason_a": "Cắt cụt giữa từ 'bậc', làm mất vế thời gian đào tạo kỹ sư và quy định tối đa hoàn thành khóa học.",
+      "score_b": 2,
+      "reason_b": "Giữ trọn vẹn Điều 3 về thời gian đào tạo cử nhân, kỹ sư và thời gian tối đa."
+    },
+    {
+      "page": 3,
+      "title": "Chương II: Rút bớt học phần và Học cải thiện điểm",
+      "score_a": 0,
+      "reason_a": "Cắt ngang mệnh đề 'Điều kiện rút: Số tín chỉ còn', mất hoàn toàn định mức tín chỉ tối thiểu.",
+      "score_b": 2,
+      "reason_b": "Bao quát toàn bộ Điều 5 với đầy đủ thời hạn rút 2 tuần và điều kiện tối thiểu 14 TC/10 TC."
+    },
+    {
+      "page": 4,
+      "title": "Chương III: Cảnh báo kết quả học tập và Buộc thôi học",
+      "score_a": 0,
+      "reason_a": "Cắt giữa từ viết tắt 'ĐTB', mất toàn bộ các ngưỡng cảnh báo học tập tích lũy qua từng năm.",
+      "score_b": 2,
+      "reason_b": "Giữ trọn vẹn Điều 7 về 3 tiêu chí cảnh báo và 3 mức độ cảnh báo kết quả học tập."
+    },
+    {
+      "page": 5,
+      "title": "Chương III: Nghỉ học tạm thời và Bảo lưu kết quả",
+      "score_a": 0,
+      "reason_a": "Cắt ngang chữ 'Vì nhu', mất hoàn toàn điều kiện bảo lưu kết quả vì nhu cầu cá nhân.",
+      "score_b": 2,
+      "reason_b": "Giữ nguyên vẹn Điều 9 gồm 4 trường hợp nghỉ học tạm thời và thời hạn tối đa 4 học kỳ."
+    },
+    {
+      "page": 6,
+      "title": "Chương IV: Học cùng lúc hai chương trình (Song bằng)",
+      "score_a": 1,
+      "reason_a": "Giữ được điều kiện GPA 2.50 nhưng câu cuối bị cắt ngang ở 'theo quy chế tuyển'.",
+      "score_b": 2,
+      "reason_b": "Giữ trọn vẹn Điều 11 về điều kiện đăng ký học song bằng và nguyên tắc cấm học cùng ngành."
+    },
+    {
+      "page": 7,
+      "title": "Chương V: Chuyển ngành, Chuyển trường và Chuyển cơ sở",
+      "score_a": 0,
+      "reason_a": "Cắt cụt từ 'tích l', mất thông tin cốt lõi về điểm tích lũy 2.50 và rèn luyện Khá.",
+      "score_b": 2,
+      "reason_b": "Giữ trọn vẹn Điều 13 về 5 tiêu chuẩn chuyển ngành học đại học."
+    },
+    {
+      "page": 8,
+      "title": "Chương VI: Thực tập tốt nghiệp và Khóa luận/Đồ án",
+      "score_a": 0,
+      "reason_a": "Cắt trước giá trị điểm số '2.60', làm mất điều kiện GPA để được làm đồ án tốt nghiệp.",
+      "score_b": 2,
+      "reason_b": "Giữ trọn vẹn Điều 15 về điều kiện 85% tín chỉ và GPA từ 2.60 trở lên."
+    },
+    {
+      "page": 9,
+      "title": "Chương VII: Tiêu chuẩn công nhận tốt nghiệp đại học",
+      "score_a": 0,
+      "reason_a": "Cắt ngang chữ '2.00 tr', làm mất chuẩn đầu ra ngoại ngữ TOEIC/IELTS và CNTT ở phía sau.",
+      "score_b": 2,
+      "reason_b": "Giữ trọn vẹn các chuẩn đầu ra tốt nghiệp tại Điều 17: tín chỉ, GPA 2.0, ngoại ngữ, GDTC, GDQP."
+    },
+    {
+      "page": 10,
+      "title": "Chương VII: Xếp hạng tốt nghiệp và Cấp văn bằng",
+      "score_a": 0,
+      "reason_a": "Cắt cụt tại 'từ Giỏi xuốn', mất toàn bộ hai điều kiện dẫn đến việc bị hạ bậc tốt nghiệp.",
+      "score_b": 2,
+      "reason_b": "Giữ trọn vẹn Điều 19 về phân loại xếp hạng tốt nghiệp và quy định hạ bậc khi học lại quá 5%."
+    }
+  ],
+  "coherence_summary": {
+    "strategy_a_avg": 0.20,
+    "strategy_b_avg": 2.00,
+    "strategy_c_avg": 2.00
+  },
+  "metadata_usefulness_test_audit": {
+    "total_records_checked": 15,
+    "records_with_correct_source_page": 15,
+    "ratio": "15/15",
+    "filter_compliance_strategy_a": "0/1",
+    "filter_compliance_strategy_b": "0/1",
+    "filter_compliance_strategy_c": "1/1",
+    "key_benefits": "Trường 'section' giúp lọc chính xác theo mảng quy chế (đào tạo, khảo thí, học phí, KTX), loại bỏ 100% nhiễu xuyên phân vùng.",
+    "limitation": "Nếu người dùng đặt câu hỏi liên quan đến nhiều phân vùng cùng lúc (ví dụ học bổng gắn với kỷ luật KTX), bộ lọc đơn trường có thể vô tình chặn bằng chứng chéo."
+  },
+  "grounding_audit_test_questions": {
+    "questions": [
+      {
+        "id": "q16",
+        "question": "Để đạt học bổng khuyến khích học tập mức Xuất sắc, sinh viên cần đạt điểm học tập và điểm rèn luyện như thế nào?",
+        "grounding_a": 2,
+        "reason_a": "Rank 3 truy xuất được trang 23 chứa đầy đủ định mức ĐTBHT từ 3.60 và ĐRL Xuất sắc từ 90 điểm.",
+        "grounding_b": 1,
+        "reason_b": "Top-3 chỉ đạt đến Điều 45 trang 23 (điều kiện cần 15 TC), điều khoản cụ thể Điều 46 bị đẩy xuống rank 4 do chunk lớn.",
+        "grounding_c": 1,
+        "reason_c": "Tương tự Strategy B (câu hỏi không có metadata filter)."
+      },
+      {
+        "id": "q17",
+        "question": "Sinh viên là con của cán bộ công chức bị tai nạn lao động hoặc bệnh nghề nghiệp được giảm bao nhiêu phần trăm học phí?",
+        "grounding_a": 1,
+        "reason_a": "Chunk A bị cắt đôi Điều 50, phần câu hỏi chỉ lấy được thân câu mà mất tiêu đề 'Đối tượng được giảm 50% học phí'.",
+        "grounding_b": 2,
+        "reason_b": "Rank 1 chứa trọn vẹn Khoản 2 Điều 50 trang 25 với đầy đủ chủ thể và mức giảm 50% học phí.",
+        "grounding_c": 2,
+        "reason_c": "Tương tự Strategy B."
+      },
+      {
+        "id": "q18",
+        "question": "Thời hạn hoàn thành toàn bộ học phí của học kỳ chính là trong vòng mấy tuần đầu tiên của kỳ học?",
+        "grounding_a": 2,
+        "reason_a": "Rank 1 chứa đầy đủ mốc thời hạn 6 tuần đầu tiên (42 ngày) tại Điều 55 trang 27.",
+        "grounding_b": 2,
+        "reason_b": "Rank 1 chứa trọn vẹn toàn bộ Điều 55 về thời hạn 6 tuần và thủ tục xin gia hạn 4 tuần.",
+        "grounding_c": 2,
+        "reason_c": "Rank 1 chứa trọn vẹn Điều 55, đồng thời rank 2 và rank 3 tuyệt đối tuân thủ filter section hoc_bong_hoc_phi."
+      },
+      {
+        "id": "q19",
+        "question": "Sinh viên nội trú ký túc xá phải có mặt tại phòng ở trước mấy giờ đêm theo quy định giờ giới nghiêm?",
+        "grounding_a": 2,
+        "reason_a": "Rank 2 chứa rõ ràng quy định giờ giới nghiêm 23h00 tại Điều 61 trang 30.",
+        "grounding_b": 2,
+        "reason_b": "Rank 2 chứa trọn vẹn Điều 61 về giờ giới nghiêm 23h00, giờ mở cửa 05h00 và thủ tục xin phép về muộn.",
+        "grounding_c": 2,
+        "reason_c": "Tương tự Strategy B."
+      },
+      {
+        "id": "q20",
+        "question": "Hành vi nấu ăn trong phòng ở Ký túc xá bằng bếp gas hoặc bếp từ sẽ bị xử lý kỷ luật ở mức nào?",
+        "grounding_a": 1,
+        "reason_a": "Top-3 chỉ chứa Điều 63 cấm nấu ăn và Điều 65 Khoản 1 (Khiển trách), thiếu Khoản 2 Điều 65 (Cảnh cáo cấp KTX cho lần đầu vi phạm nấu ăn).",
+        "grounding_b": 1,
+        "reason_b": "Top-3 chứa Điều 63 cấm nấu ăn và Điều 65 Khoản 1, điều khoản cụ thể Khoản 2 nằm ở Chunk 1 xếp thứ 4.",
+        "grounding_c": 1,
+        "reason_c": "Tương tự Strategy B."
+      }
+    ],
+    "grounding_summary": {
+      "strategy_a": {"0": 0, "1": 2, "2": 3, "average": 1.60},
+      "strategy_b": {"0": 0, "1": 2, "2": 3, "average": 1.60},
+      "strategy_c": {"0": 0, "1": 2, "2": 3, "average": 1.60}
+    }
+  }
+}

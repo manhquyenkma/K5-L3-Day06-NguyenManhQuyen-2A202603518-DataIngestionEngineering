@@ -1,0 +1,73 @@
+{
+  "source_id": "so-tay-sinh-vien-2024",
+  "title": "Sổ tay Sinh viên và Quy chế Học vụ - Khảo thí - Công tác Sinh viên (Năm học 2024 - 2025)",
+  "source_path_or_url": "data/so_tay_sinh_vien_2024.json",
+  "license_or_permission": "Public University Academic Regulations / CC BY-SA 4.0 (Quy chế học vụ và công tác sinh viên công khai)",
+  "accessed_at": "2024-09-01T08:00:00Z",
+  "snapshot_version": "v2024.1_final",
+  "effective_date": "2024-09-01",
+  "total_units": 32,
+  "unit_definition": "32 đơn vị trang/chương học vụ độc lập, mỗi đơn vị có tối thiểu 1.500 ký tự nội dung đã chuẩn hóa theo hướng dẫn GUIDE.md",
+  "total_characters": 54502,
+  "sections": [
+    {
+      "section_id": "dao_tao",
+      "name": "Quy chế Đào tạo đại học theo hệ thống tín chỉ",
+      "pages": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    },
+    {
+      "section_id": "khao_thi",
+      "name": "Quy chế Khảo thí, thi kết thúc học phần và kỷ luật phòng thi",
+      "pages": [11, 12, 13, 14, 15, 16]
+    },
+    {
+      "section_id": "cong_tac_sinh_vien",
+      "name": "Quy chế Đánh giá điểm rèn luyện, Khen thưởng và Kỷ luật sinh viên",
+      "pages": [17, 18, 19, 20, 21, 22]
+    },
+    {
+      "section_id": "hoc_bong_hoc_phi",
+      "name": "Chính sách Học bổng, Miễn giảm học phí và Trợ cấp xã hội",
+      "pages": [23, 24, 25, 26, 27]
+    },
+    {
+      "section_id": "ky_tuc_xa",
+      "name": "Quy chế Ký túc xá, Quản lý nội trú và An ninh trật tự",
+      "pages": [28, 29, 30, 31, 32]
+    }
+  ],
+  "pages": [
+    {"page": 1, "section": "dao_tao", "chars": 1582, "title": "Chương I: Quy định chung về Chương trình đào tạo và Tín chỉ"},
+    {"page": 2, "section": "dao_tao", "chars": 1695, "title": "Chương II: Tổ chức năm học và Đăng ký học phần"},
+    {"page": 3, "section": "dao_tao", "chars": 1904, "title": "Chương II: Rút bớt học phần và Học cải thiện điểm"},
+    {"page": 4, "section": "dao_tao", "chars": 1827, "title": "Chương III: Cảnh báo kết quả học tập và Buộc thôi học"},
+    {"page": 5, "section": "dao_tao", "chars": 1860, "title": "Chương III: Nghỉ học tạm thời và Bảo lưu kết quả"},
+    {"page": 6, "section": "dao_tao", "chars": 1709, "title": "Chương IV: Học cùng lúc hai chương trình (Song bằng)"},
+    {"page": 7, "section": "dao_tao", "chars": 1729, "title": "Chương V: Chuyển ngành, Chuyển trường và Chuyển cơ sở"},
+    {"page": 8, "section": "dao_tao", "chars": 1891, "title": "Chương VI: Thực tập tốt nghiệp và Khóa luận/Đồ án"},
+    {"page": 9, "section": "dao_tao", "chars": 1774, "title": "Chương VII: Tiêu chuẩn công nhận tốt nghiệp đại học"},
+    {"page": 10, "section": "dao_tao", "chars": 1836, "title": "Chương VII: Xếp hạng tốt nghiệp và Cấp văn bằng"},
+    {"page": 11, "section": "khao_thi", "chars": 1632, "title": "Chương VIII: Quy chế tổ chức thi kết thúc học phần"},
+    {"page": 12, "section": "khao_thi", "chars": 1718, "title": "Chương VIII: Hoãn thi và Thi bổ sung"},
+    {"page": 13, "section": "khao_thi", "chars": 1642, "title": "Chương IX: Thang điểm và Cách tính điểm học phần"},
+    {"page": 14, "section": "khao_thi", "chars": 1787, "title": "Chương IX: Phúc khảo bài thi và Khiếu nại điểm"},
+    {"page": 15, "section": "khao_thi", "chars": 1723, "title": "Chương X: Kỷ luật phòng thi - Khiển trách và Cảnh cáo"},
+    {"page": 16, "section": "khao_thi", "chars": 1735, "title": "Chương X: Đình chỉ thi và Xử lý gian lận có tổ chức"},
+    {"page": 17, "section": "cong_tac_sinh_vien", "chars": 1944, "title": "Chương XI: Đánh giá kết quả rèn luyện sinh viên"},
+    {"page": 18, "section": "cong_tac_sinh_vien", "chars": 1502, "title": "Chương XI: Phân loại rèn luyện và Sử dụng kết quả"},
+    {"page": 19, "section": "cong_tac_sinh_vien", "chars": 1777, "title": "Chương XII: Khen thưởng sinh viên và Danh hiệu thi đua"},
+    {"page": 20, "section": "cong_tac_sinh_vien", "chars": 1978, "title": "Chương XIII: Xử lý kỷ luật sinh viên vi phạm quy chế"},
+    {"page": 21, "section": "cong_tac_sinh_vien", "chars": 1756, "title": "Chương XIV: Thủ tục hành chính và Dịch vụ sinh viên"},
+    {"page": 22, "section": "cong_tac_sinh_vien", "chars": 1656, "title": "Chương XV: Hoạt động Đoàn - Hội và Công tác xã hội"},
+    {"page": 23, "section": "hoc_bong_hoc_phi", "chars": 1783, "title": "Chương XVI: Học bổng khuyến khích học tập (KKHT)"},
+    {"page": 24, "section": "hoc_bong_hoc_phi", "chars": 1714, "title": "Chương XVI: Học bổng tài trợ doanh nghiệp và Tổ chức xã hội"},
+    {"page": 25, "section": "hoc_bong_hoc_phi", "chars": 1827, "title": "Chương XVII: Chính sách miễn, giảm học phí"},
+    {"page": 26, "section": "hoc_bong_hoc_phi", "chars": 1668, "title": "Chương XVII: Trợ cấp xã hội và Hỗ trợ chi phí học tập"},
+    {"page": 27, "section": "hoc_bong_hoc_phi", "chars": 1836, "title": "Chương XVIII: Định mức, Thời hạn và Chế tài nộp học phí"},
+    {"page": 28, "section": "ky_tuc_xa", "chars": 1618, "title": "Chương XIX: Tiêu chuẩn và Thứ tự ưu tiên xét ở Ký túc xá"},
+    {"page": 29, "section": "ky_tuc_xa", "chars": 1675, "title": "Chương XIX: Thủ tục tiếp nhận, Bàn giao và Rút khỏi KTX"},
+    {"page": 30, "section": "ky_tuc_xa", "chars": 1663, "title": "Chương XX: Nội quy an ninh trật tự và Giờ giấc Ký túc xá"},
+    {"page": 31, "section": "ky_tuc_xa", "chars": 1719, "title": "Chương XXI: An toàn phòng cháy chữa cháy và Sử dụng điện nước"},
+    {"page": 32, "section": "ky_tuc_xa", "chars": 1735, "title": "Chương XXII: Kỷ luật và Xử lý vi phạm nội quy KTX"}
+  ]
+}
