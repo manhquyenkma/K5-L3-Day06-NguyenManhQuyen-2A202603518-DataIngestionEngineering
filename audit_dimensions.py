@@ -73,3 +73,4 @@ for strat, t_list in test_audit.items():
         print(f"Q: {t['question_id']} | Gold p{t['gold_page']} | Hit@1: {t['hit_at_1']} | Hit@3: {t['hit_at_3']}")
         for h in t["top_hits"]:
             print(f"   Rank {h['rank']}: p{h['page']} (score={h['score']:.4f}, hit={h['is_hit']}) - {h['reason']}")
+

@@ -166,3 +166,4 @@
 1. **Hybrid Retrieval (Dense + BM25 Sparse Search):** Kết hợp vector đa ngữ của Sentence Transformers với thuật toán từ khóa BM25 để vừa bắt được ngữ nghĩa khái quát, vừa bắt chính xác các con số điều kiện đặc thù (như "50%", "3.60", "23h00").
 2. **Hierarchical / Parent-Document Retrieval:** Chia chunk nhỏ 200–300 ký tự để tìm kiếm vector chính xác cao, nhưng khi gửi bằng chứng cho LLM thì trả về toàn bộ Điều (Parent Chunk 800–1.000 ký tự) để đảm bảo 100% tính mạch lạc và đầy đủ điều kiện ngoại lệ.
 3. **Phân loại câu hỏi tự động (Query Intent & Metadata Routing):** Áp dụng một mô hình phân loại nhẹ hoặc rule-based router để tự động trích xuất `section` từ câu hỏi tự nhiên của sinh viên trước khi truyền vào vector store.
+

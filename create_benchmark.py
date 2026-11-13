@@ -267,3 +267,4 @@ filter_count = sum(1 for q in questions if q["filter"] is not None)
 test_filter_count = sum(1 for q in questions if q["split"] == "test" and q["filter"] is not None)
 print(f"Total: {len(questions)} (Dev: {dev_count}, Test: {test_count})")
 print(f"Filter questions: {filter_count} total, {test_filter_count} in Test set.")
+
